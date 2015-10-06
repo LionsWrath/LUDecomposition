@@ -1,0 +1,7 @@
+CC=mpicc
+CFLAGS=-std=gnu99
+
+all: lu_seven
+%: %.c ; $(CC) lu_seven.c -o lu_seven
+
+clean: ; rm -rf lu_seven
